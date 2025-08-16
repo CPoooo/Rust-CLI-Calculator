@@ -9,3 +9,5 @@ Performs addition, subtraction, multiplication, and division.
 ```bash
 cargo run
 ```
+
+Follow the on-screen prompts to enter two numbers and select an operation.
