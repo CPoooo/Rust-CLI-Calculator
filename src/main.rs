@@ -25,10 +25,10 @@ fn main() {
     let selection = input.trim();
 
     match selection {
-        "a" => println!("You chose addition"),
-        "s" => println!("You chose subtraction"),
-        "d" => println!("You chose division"),
-        "m" => println!("You chose mutliplication"),
+        "a" => add(num1, num2),
+        "s" => sub(num1, num2),
+        "d" => divide(num1.into(), num2.into()),
+        "m" => multiply(num1, num2),
         _ => println!("You chose something else? You imbecile!"),
     }
 }
@@ -37,13 +37,13 @@ fn add(n1: u32, n2: u32) {
     println!("{n1} + {n2} = {}", n1 + n2);
 }
 fn sub(n1: u32, n2: u32) {
-    println!("{n1} - {n2} = {}", n1 + n2);
+    println!("{n1} - {n2} = {}", n1 - n2);
 }
 
-fn divide(n1: u32, n2: u32) {
-    println!("{n1} / {n2} = {}", n1 + n2);
+fn divide(n1: f64, n2: f64) {
+    println!("{n1} / {n2} = {}", n1 / n2);
 }
 
 fn multiply(n1: u32, n2: u32) {
-    println!("{n1} * {n2} = {}", n1 + n2);
+    println!("{n1} * {n2} = {}", n1 * n2);
 }
